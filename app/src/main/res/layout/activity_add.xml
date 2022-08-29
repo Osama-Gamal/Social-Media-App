@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content">
+
+	<RelativeLayout
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context="com.androidjson.firebaseuploadimage_androidjsoncom.MainActivity">
+
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="150dp"
+			android:id="@+id/ShowImageView"
+			android:layout_below="@+id/textview"
+			android:layout_marginTop="20dp"
+			android:src="@drawable/add_image"/>
+
+		<Button
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/ButtonChooseImage"
+			android:layout_below="@+id/ShowImageView"
+			android:layout_marginTop="20dp"
+			android:text="اختر صورة"/>
+
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/ImageNameEditText"
+			android:layout_below="@+id/ButtonChooseImage"
+			android:layout_marginTop="20dp"
+			android:hint="اكتب النص الذي تريده"
+			android:gravity="center"/>
+
+		<Button
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/ButtonUploadImage"
+			android:layout_below="@+id/ImageNameEditText"
+			android:layout_marginTop="20dp"
+			android:text="Upload image to Firebase Storage"/>
+
+	</RelativeLayout>
+
+</ScrollView>
+

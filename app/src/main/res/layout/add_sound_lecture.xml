@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#FFFFFFFF">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:padding="8dp"
+		android:background="#FFC6C6C6">
+
+		<EditText
+			android:layout_height="100dp"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:hint="وصف المحاضرة"
+			android:textColor="#FF000000"
+			android:textColorHint="#FFAEAEAE"
+			android:textSize="13sp"
+			android:background="#FFFFFFFF"
+			android:id="@+id/des_lecture"
+			android:gravity="top"
+			android:padding="5dp"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="3dp"
+			android:gravity="center"
+			android:padding="6dp">
+
+			<EditText
+				android:layout_height="35dp"
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:hint="أو : ادخل رابط المحاضرة"
+				android:textColor="#FF000000"
+				android:textColorHint="#FFAEAEAE"
+				android:textSize="13sp"
+				android:background="#FFFFFFFF"
+				android:layout_marginRight="3dp"
+				android:layout_marginLeft="3dp"
+				android:id="@+id/link_lecture"
+				android:singleLine="true"
+				android:gravity="center_vertical"
+				android:layout_weight="1.0"/>
+
+			<Button
+				android:layout_height="35dp"
+				android:layout_width="wrap_content"
+				android:text="اختر من الهاتف"
+				android:background="#FF03A9F4"
+				android:textSize="10sp"
+				android:id="@+id/pick_lecture"
+				android:textColor="#FFFFFFFF"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="70dp"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:background="#FFF1F1F1"
+			android:padding="8dp"
+			android:id="@+id/sound_place"
+			android:layout_marginBottom="5dp"
+			android:layout_marginTop="8dp">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:padding="10dp"
+				android:background="@drawable/circle_button">
+
+				<ImageView
+					android:layout_height="20dp"
+					android:layout_width="20dp"
+					android:src="@drawable/play_audio"
+					android:id="@+id/sound_play"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:layout_marginLeft="4dp"
+				android:layout_marginRight="4dp">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:padding="3dp">
+
+					<LinearLayout
+						android:layout_height="wrap_content"
+						android:layout_width="25dp"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="17dp"
+							android:textAppearance="?android:attr/textAppearanceSmall"
+							android:text="اسم المقطع"
+							android:textColor="#FF000000"
+							android:id="@+id/sound_name"
+							android:textSize="12sp"
+							android:singleLine="true"
+							android:visibility="invisible"/>
+
+						<TextView
+							android:layout_height="10dp"
+							android:layout_width="wrap_content"
+							android:text="___"
+							android:textColor="#FF000000"
+							android:textSize="9sp"
+							android:id="@+id/sound_size"
+							android:singleLine="true"/>
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_height="match_parent"
+						android:layout_width="150dp"
+						android:orientation="horizontal"
+						android:gravity="center"
+						android:padding="4dp"
+						android:layout_marginLeft="5dp"
+						android:layout_marginRight="5dp">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="0.0"
+							android:textColor="#FF000000"
+							android:textSize="10sp"
+							android:id="@+id/sound_startText"
+							android:singleLine="true"
+							android:gravity="center"/>
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="/"
+							android:textSize="12sp"
+							android:textColor="#FF000000"
+							android:layout_marginLeft="3dp"
+							android:layout_marginRight="3dp"
+							android:gravity="center"/>
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="0.0"
+							android:textColor="#FF000000"
+							android:textSize="10sp"
+							android:id="@+id/sound_finalText"
+							android:singleLine="true"
+							android:gravity="center"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<SeekBar
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/sound_progress"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="70dp"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="right|center_vertical">
+
+			<Button
+				android:id="@+id/upload_lecture"
+				style="@style/loginButton"
+				android:text="نشر المحاضرة"
+				android:layout_width="120dp"
+				android:layout_marginRight="10dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

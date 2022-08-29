@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/main"
+            android:title="الصفحة الرئيسية" />
+        <item
+            android:id="@+id/nav_students"
+            android:icon="@drawable/team_1"
+            android:title="B2P أعضاء" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/account_icon"
+            android:title="حسابي" />
+        <item
+            android:id="@+id/nav_media"
+            android:icon="@drawable/media_icon"
+            android:title="الوسائط" />
+
+
+
+        <group
+            android:id="@+id/media_group"
+            android:checkableBehavior="single"
+            android:visible="false">
+            <menu>
+                <item
+                    android:id="@+id/photo"
+                    android:icon="@drawable/image_gallery"
+                    android:title="الصور" />
+
+                <item
+                    android:id="@+id/sounds"
+                    android:icon="@drawable/voicesearch"
+                    android:title="الصوت" />
+                <item
+                    android:id="@+id/pdfs"
+                    android:icon="@drawable/pdf"
+                    android:title="المجلدات" />
+                <item
+                    android:id="@+id/links"
+                    android:icon="@drawable/link_image"
+                    android:title="الروابط" />
+            </menu>
+
+        </group>
+
+
+    </group>
+
+
+    <item android:title="تواصل">
+
+        <group
+            android:id="@+id/managemen58t"
+            android:checkableBehavior="single"
+            android:visible="false">
+        <menu>
+
+            <item
+                android:id="@+id/nav_developer"
+                android:icon="@drawable/devloper_icon"
+                android:title="المبرمج" />
+
+            <item
+                android:id="@+id/nav_communicate"
+                android:icon="@drawable/team_2"
+                android:title="الادارة" />
+
+        </menu>
+    </group>
+
+    </item>
+
+    <group
+        android:id="@+id/management"
+        android:checkableBehavior="single"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/management_admins"
+                android:icon="@drawable/manager_icon"
+                android:title="الاشراف" />
+            <item
+                android:id="@+id/management_stablize"
+                android:icon="@drawable/time_management"
+                android:title="التنظيم" />
+            <item
+                android:id="@+id/management_social"
+                android:icon="@drawable/discussion"
+                android:title="الدعم الاجتماعي" />
+            <item
+                android:id="@+id/management_technical"
+                android:icon="@drawable/management_social"
+                android:title="الدعم التقني" />
+        </menu>
+
+    </group>
+
+
+
+    <group
+        android:id="@+id/web"
+        android:checkableBehavior="single"
+        android:visible="true">
+
+    <item android:title="ويب">
+        <menu>
+            <item
+                android:id="@+id/main_page"
+                android:icon="@drawable/facebook"
+                android:title="الصفحة الرسمية" />
+            <item
+                android:id="@+id/main_site"
+                android:icon="@drawable/domain"
+                android:title="الموقع الرسمي" />
+        </menu>
+
+    </item>
+</group>
+
+
+</menu>
+
+

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wanjy.dannie.rivchat.MainActivity">
+    <item
+        android:id="@+id/copy"
+        android:orderInCategory="100"
+        android:title="نسخ النص"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/download"
+        android:orderInCategory="100"
+        android:title="تحميل الصورة"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+
+
+
+</menu>

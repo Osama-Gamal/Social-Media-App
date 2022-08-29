@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_marginBottom="8dp"
+	android:layout_marginEnd="24dp"
+	android:layout_marginStart="24dp"
+	android:layout_marginTop="8dp"
+	android:orientation="vertical"
+	app:layout_constraintBottom_toBottomOf="parent"
+	app:layout_constraintEnd_toEndOf="parent"
+	app:layout_constraintStart_toStartOf="parent"
+	app:layout_constraintTop_toTopOf="parent">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		style="@style/loginHeader"
+		android:text="Register"
+		android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+	<android.support.design.widget.TextInputLayout
+		android:id="@+id/textInputName"
+		style="@style/parent"
+		android:layout_marginTop="@dimen/loginViewsMargin">
+
+		<EditText
+			android:id="@+id/editTextName"
+			style="@style/modifiedEditText"
+			android:hint="@string/login_name_hint"
+			android:inputType="textPersonName"
+			android:maxLines="1"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:id="@+id/textInputEmail"
+		style="@style/parent"
+		android:layout_marginTop="@dimen/loginViewsMargin">
+
+		<EditText
+			android:id="@+id/editTextEmail"
+			style="@style/modifiedEditText"
+			android:hint="@string/login_email_hint"
+			android:inputType="textEmailAddress"
+			android:maxLines="1"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:id="@+id/textInputPassword"
+		style="@style/parent"
+		android:layout_marginTop="@dimen/loginViewsMargin">
+
+		<EditText
+			android:id="@+id/editTextPassword1"
+			style="@style/modifiedEditText"
+			android:hint="@string/login_password_hint"
+			android:inputType="textPassword"
+			android:maxLines="1"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:id="@+id/textInputPassword2"
+		style="@style/parent"
+		android:layout_marginTop="@dimen/loginViewsMargin">
+
+		<EditText
+			android:id="@+id/editTextPassword2"
+			style="@style/modifiedEditText"
+			android:hint="Repeat Password"
+			android:inputType="textPassword"
+			android:maxLines="1"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<Spinner
+		android:layout_height="40dp"
+		android:layout_width="match_parent"
+		android:layout_marginTop="10dp"
+		android:id="@+id/spinnerGroup"
+		android:layout_marginBottom="10dp"/>
+
+	<CheckBox
+		android:background="#6A0594C6"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="التحقق من بطاقة الترشيح QR Code"
+		android:layout_above="@+id/flashlight_checkbox"
+		android:textSize="13sp"
+		android:padding="16dp"
+		android:textColor="#ffffff"
+		android:id="@+id/enable_decoding_checkbox"
+		android:checked="true"
+		android:layout_marginBottom="20dp"
+		android:layout_marginTop="15dp"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="right"
+		android:layout_marginTop="8dp">
+
+		<Button
+			android:id="@+id/cirRegisterButton"
+			style="@style/loginButton"
+			android:text="Signup"
+			android:layout_marginRight="5dp"
+			android:layout_marginLeft="5dp"
+			android:layout_width="130dp"/>
+
+		<Button
+			android:id="@+id/cirBackButton"
+			style="@style/loginButton"
+			android:text="Back"
+			android:layout_width="80dp"/>
+
+	</LinearLayout>
+
+	<TextView
+		style="@style/parent"
+		android:textAlignment="textEnd"
+		android:textStyle="bold"
+		android:textColor="@color/primaryTextColor"
+		android:text="I Have Alerady An Email"
+		android:layout_marginTop="@dimen/loginViewsMargin"
+		android:gravity="right"
+		android:id="@+id/haveEmailText"/>
+
+</LinearLayout>
+

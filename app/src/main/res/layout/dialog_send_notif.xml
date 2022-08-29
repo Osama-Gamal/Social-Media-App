@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#FF03A9F4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTxtDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اشعار جديد"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputEmail"
+            style="@style/parent"
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top"
+            android:hint="اكتب نص الاشعار">
+
+            <EditText
+                android:id="@+id/NotifEditText"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|right" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgView_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rellay2"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="7dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="7dp">
+
+        <Button
+            android:id="@+id/acceptbtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="ارسال"
+            android:textColor="#FF0694B8"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/closebtn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="#00000000"
+            android:text="الغاء"
+            android:textColor="#FFB21212"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

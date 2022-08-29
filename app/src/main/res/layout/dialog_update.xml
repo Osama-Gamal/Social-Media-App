@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#FF03A9F4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTxtDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تحديث جديد"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/questionTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:text="يوجد تحديث جديد لهذا التطبيق قم بالضغط علي زر التحديث , لتتمكن من استخدام هذا التطبيق."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FF000000" />
+
+        <TextView
+            android:id="@+id/progressTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="#FF000000"
+        android:text="0" />
+
+        <ProgressBar
+            android:id="@+id/downloadProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgView_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rellay2"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="7dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="7dp">
+
+        <Button
+            android:id="@+id/acceptbtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="تحديث"
+            android:textColor="#FF0694B8"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/closebtn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="#00000000"
+            android:text="خروج"
+            android:textColor="#FFB21212"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="#FFFFFF">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="@color/colorPrimary"
+		android:gravity="center"
+		android:padding="5dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="إختر الوظيفة"
+			android:textColor="#FFFF"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:padding="10dp">
+
+		<Button
+			android:id="@+id/custom_addpost"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:background="@color/colorPrimary"
+			android:text="نشر صور"
+			android:textColor="#FFFF"
+			android:textStyle="bold" />
+
+
+
+		<Button
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="40dp"
+			android:layout_width="match_parent"
+			android:id="@+id/custom_addbook"
+			android:text="نشر مجلد"
+			android:background="@color/colorPrimary"
+			android:textStyle="bold"
+			android:textColor="#FFFF"
+			android:layout_marginTop="5dp"/>
+
+		<Button
+			android:id="@+id/custom_addvideo"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="5dp"
+			android:background="@color/colorPrimary"
+			android:text="نشر محاضرة"
+			android:textColor="#FFFF"
+			android:textStyle="bold" />
+
+		<Button
+			android:id="@+id/custom_addNotif"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="5dp"
+			android:background="#FF9800"
+			android:text="ارسال اشعار"
+			android:textColor="#FFFF"
+			android:textStyle="bold" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:layout_marginTop="10dp"
+			android:orientation="vertical"
+			android:padding="10dp">
+
+
+			<TextView
+				android:id="@+id/textView6"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:text="خصائص المراسلات"
+				android:textColor="#000000" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="right"
+				android:orientation="vertical"
+				android:padding="5dp">
+
+				<Switch
+					android:id="@+id/switch_image"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+
+					android:text="  الصور" />
+
+				<Switch
+					android:id="@+id/switch_sound"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="  الصوت" />
+
+				<Switch
+					android:id="@+id/switch_book"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="  المجلدات" />
+
+			</LinearLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

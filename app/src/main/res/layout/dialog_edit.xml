@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="180dp"
+	android:orientation="vertical"
+	android:background="#FFFFFFFF">
+
+	<LinearLayout
+		android:layout_height="35dp"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="#FF03A9F4"
+		android:gravity="center">
+
+		<TextView
+			android:id="@+id/titleTxtDialog"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="تغيير الاسم"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#FFFFFFFF"
+			android:textStyle="bold" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_weight="1.0"
+		android:padding="8dp">
+
+		<TextView
+			android:id="@+id/questionTxt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:text="هل تريد تغيير الاسم ؟"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#FF000000" />
+
+		<android.support.design.widget.TextInputLayout
+			android:id="@+id/textInputEmail"
+			style="@style/parent"
+			android:layout_marginTop="@dimen/loginViewsMargin">
+
+			<EditText
+				android:id="@+id/ImageNameEditText"
+				style="@style/modifiedEditText"
+				android:hint="ادخل اسمك هنا"
+				android:maxLines="1"/>
+
+		</android.support.design.widget.TextInputLayout>
+
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/imgView_line"
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:layout_below="@+id/rellay2"
+		android:layout_marginTop="10dp"
+		android:background="@color/light_grey"/>
+
+	<LinearLayout
+		android:layout_height="50dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="right|center_vertical"
+		android:paddingRight="7dp"
+		android:layout_marginLeft="7dp">
+
+		<Button
+			android:id="@+id/acceptbtn"
+			android:layout_width="80dp"
+			android:layout_height="40dp"
+			android:background="#00000000"
+			android:text="تغيير الاسم"
+			android:textColor="#FF0694B8"
+			android:textSize="13sp" />
+
+		<Button
+			android:layout_height="40dp"
+			android:layout_width="50dp"
+			android:text="الغاء"
+			android:background="#00000000"
+			android:textColor="#FFB21212"
+			android:textSize="13sp"
+			android:layout_marginRight="4dp"
+			android:layout_marginLeft="4dp"
+			android:id="@+id/closebtn"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

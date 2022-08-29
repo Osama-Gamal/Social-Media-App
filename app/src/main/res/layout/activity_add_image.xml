@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/chat_backgroun460"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="right"
+        android:background="#FFFFFF"
+
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/upload_btn"
+            style="@style/loginButton"
+            android:layout_width="120dp"
+            android:layout_marginRight="10dp"
+            android:text="ننشر الموضوع" />
+
+        <Button
+            android:id="@+id/select_btn"
+            style="@style/loginButton"
+            android:layout_width="120dp"
+            android:layout_marginRight="10dp"
+            android:text="اختر الصور" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputEmail"
+        style="@style/parent"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:hint="ادخل النص هنا">
+
+        <EditText
+            android:id="@+id/ImageNameEditText"
+            style="@style/modifiedEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <in.nashapp.androidsummernote.Summernote
+        android:id="@+id/summernote"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/upload_list"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

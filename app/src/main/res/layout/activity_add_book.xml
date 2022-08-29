@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#FFFFFFFF">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:padding="8dp"
+		android:background="#FFD0D0D0">
+
+		<EditText
+			android:layout_height="35dp"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:hint="أسم المجلد"
+			android:textColor="#FF000000"
+			android:textColorHint="#FFAEAEAE"
+			android:textSize="13sp"
+			android:background="#FFFFFFFF"
+			android:id="@+id/name_book"
+			android:layout_marginBottom="3dp"
+			android:singleLine="true"
+			android:gravity="center_vertical"
+			android:padding="5dp"/>
+
+		<EditText
+			android:layout_height="150dp"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:hint="وصف قصير المجلد للتعريف بمحتواه"
+			android:textColor="#FF000000"
+			android:textColorHint="#FFAEAEAE"
+			android:textSize="13sp"
+			android:background="#FFFFFFFF"
+			android:id="@+id/des_book"
+			android:gravity="top"
+			android:maxLines="3"
+			android:padding="5dp"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="3dp"
+			android:gravity="center"
+			android:padding="6dp">
+
+			<EditText
+				android:layout_height="35dp"
+				android:layout_width="wrap_content"
+				android:ems="10"
+				android:hint="أو : ادخل رابط المجلد"
+				android:textColor="#FF000000"
+				android:textColorHint="#FFAEAEAE"
+				android:textSize="13sp"
+				android:background="#FFFFFFFF"
+				android:layout_marginRight="3dp"
+				android:layout_marginLeft="3dp"
+				android:id="@+id/link_book"
+				android:layout_weight="1.0"
+				android:singleLine="true"/>
+
+			<Button
+				android:layout_height="35dp"
+				android:layout_width="wrap_content"
+				android:text="اختر من الهاتف"
+				android:background="#FF03A9F4"
+				android:textSize="10sp"
+				android:id="@+id/pick_Book"
+				android:textColor="#FFFFFFFF"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="70dp"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="right|center_vertical"
+			android:padding="15dp">
+
+			<Button
+				android:id="@+id/upload_book"
+				style="@style/loginButton"
+				android:text="نشر المجلد"
+				android:layout_width="120dp"
+				android:layout_marginRight="5dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

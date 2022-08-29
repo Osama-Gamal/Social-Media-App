@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/notifications"
+        android:enabled="true"
+        android:icon="@drawable/alarm"
+        android:title="اشعارات"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/communicateUs"
+        android:enabled="true"
+        android:icon="@drawable/meeting"
+        android:title="استفسار"
+        app:showAsAction="ifRoom"/>
+</menu>

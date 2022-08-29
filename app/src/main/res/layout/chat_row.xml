@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/shape"
+	android:layout_marginTop="2dp"
+	android:id="@+id/chat_place">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="4dp">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="2dp">
+
+			<ImageView
+				android:id="@+id/comment_user_img"
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				android:scaleType="fitXY"
+				android:src="@drawable/image_placeholder" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_weight="1.0"
+			android:orientation="vertical"
+			android:padding="2dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/comment_username"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="____________"
+					android:textColor="#000000"
+					android:textSize="13sp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="4dp"
+					android:layout_marginRight="4dp"
+					android:text="." />
+
+				<TextView
+					android:id="@+id/titleTxt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:singleLine="true"
+					android:text="___"
+					android:textColor="#FF0891E8"
+					android:textSize="10sp" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/comment_date"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="_________"
+					android:textColor="#838383"
+					android:textSize="11sp" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="4dp"
+					android:layout_marginRight="4dp"
+					android:text="-"
+					android:textSize="11sp" />
+
+				<TextView
+					android:id="@+id/groupTxt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="__"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:textColor="#FF838383"
+					android:textSize="11sp" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="4dp"
+					android:layout_marginRight="4dp"
+					android:text="-"
+					android:textSize="11sp" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<ImageView
+						android:layout_width="15dp"
+						android:layout_height="15dp"
+						android:layout_marginLeft="4dp"
+						android:layout_marginRight="4dp"
+						android:alpha="0.4"
+						android:src="@drawable/eye" />
+
+					<TextView
+						android:id="@+id/Seen_num"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="bottom"
+						android:text="0"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:textColor="#FF838383"
+						android:textSize="11sp" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:padding="5dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Text"
+			android:textColor="#000000"
+			android:id="@+id/comment_id"
+			android:visibility="gone"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="Good news , Thanks"
+			android:textColor="#000000"
+			android:textSize="14sp"
+			android:autoLink="web"
+			android:id="@+id/comment_content"/>
+
+		<ImageView
+			android:layout_height="170dp"
+			android:layout_width="220dp"
+			android:id="@+id/commentt_rowImageView"
+			android:src="@drawable/image_placeholder"
+			android:scaleType="fitCenter"
+			android:adjustViewBounds="true"/>
+
+		<LinearLayout
+			android:layout_height="65dp"
+			android:layout_width="260dp"
+			android:orientation="horizontal"
+			android:background="#FFF1F1F1"
+			android:padding="8dp"
+			android:id="@+id/sound_place"
+			android:layout_marginBottom="5dp">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:padding="10dp"
+				android:background="@drawable/circle_button">
+
+				<ImageView
+					android:layout_height="20dp"
+					android:layout_width="20dp"
+					android:src="@drawable/play_audio"
+					android:id="@+id/sound_play"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:layout_marginLeft="4dp"
+				android:layout_marginRight="4dp">
+
+				<LinearLayout
+					android:layout_height="30dp"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:padding="3dp">
+
+					<LinearLayout
+						android:layout_height="30dp"
+						android:layout_width="match_parent"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:layout_height="match_parent"
+							android:layout_width="match_parent"
+							android:orientation="horizontal"
+							android:gravity="left|center_vertical"
+							android:padding="4dp"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp">
+
+							<TextView
+								android:layout_height="wrap_content"
+								android:layout_width="wrap_content"
+								android:text="0.0"
+								android:textColor="#FF000000"
+								android:textSize="10sp"
+								android:id="@+id/sound_startText"
+								android:singleLine="true"
+								android:gravity="center"
+								android:layout_weight="1.0"/>
+
+							<TextView
+								android:layout_height="wrap_content"
+								android:layout_width="wrap_content"
+								android:text="/"
+								android:textSize="12sp"
+								android:textColor="#FF000000"
+								android:layout_marginLeft="3dp"
+								android:layout_marginRight="3dp"
+								android:gravity="center"/>
+
+							<TextView
+								android:layout_height="wrap_content"
+								android:layout_width="wrap_content"
+								android:text="0.0"
+								android:textColor="#FF000000"
+								android:textSize="10sp"
+								android:id="@+id/sound_finalText"
+								android:singleLine="true"
+								android:gravity="center"
+								android:layout_weight="1.0"/>
+
+							<TextView
+								android:layout_height="10dp"
+								android:layout_width="wrap_content"
+								android:text="----"
+								android:textColor="#FF000000"
+								android:textSize="9sp"
+								android:id="@+id/sound_size"
+								android:singleLine="true"
+								android:layout_marginLeft="3dp"
+								android:layout_marginRight="3dp"
+								android:layout_marginBottom="3dp"
+								android:gravity="center"/>
+
+							<LinearLayout
+								android:layout_height="match_parent"
+								android:layout_width="wrap_content"
+								android:orientation="vertical"
+								android:gravity="center"
+								android:layout_marginRight="2dp">
+
+								<ImageView
+									android:layout_height="17dp"
+									android:layout_width="20dp"
+									android:src="@drawable/download_btn"
+									android:id="@+id/download_btn1"/>
+
+							</LinearLayout>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<SeekBar
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:id="@+id/sound_progress"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="60dp"
+			android:layout_width="260dp"
+			android:orientation="horizontal"
+			android:background="#FFDDDDDD"
+			android:padding="8dp"
+			android:id="@+id/pdf_shower">
+
+			<ImageView
+				android:layout_height="40dp"
+				android:layout_width="40dp"
+				android:src="@drawable/add_pdf"/>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:padding="3dp"
+				android:layout_marginLeft="4dp"
+				android:layout_marginRight="4dp"
+				android:layout_weight="1.0">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text="اسم المجلد"
+					android:textColor="#FF000000"
+					android:id="@+id/pdf_name"
+					android:textSize="12sp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="______"
+					android:textColor="#FF000000"
+					android:textSize="9sp"
+					android:id="@+id/pdf_size"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_height="match_parent"
+					android:layout_width="wrap_content"
+					android:orientation="vertical"
+					android:gravity="top"
+					android:layout_marginRight="2dp">
+
+					<ImageView
+						android:layout_height="17dp"
+						android:layout_width="20dp"
+						android:src="@drawable/download_btn"
+						android:id="@+id/download_btn2"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:paddingRight="10dp"
+		android:paddingLeft="10dp"
+		android:padding="2dp"
+		android:background="#FFFFFFFF"
+		android:id="@+id/lyaout_Like"
+		android:visibility="gone">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_weight="1.0"
+			android:padding="5dp"
+			android:layout_marginLeft="20dp">
+
+			<ImageView
+				android:layout_height="25dp"
+				android:layout_width="25dp"
+				android:src="@mipmap/action_like_gray"
+				android:id="@+id/comment_like_btn"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="ــــ"
+				android:textColor="#000000"
+				android:textSize="12sp"
+				android:layout_marginLeft="8dp"
+				android:layout_marginRight="8dp"
+				android:gravity="center"
+				android:layout_weight="1.0"
+				android:id="@+id/comment_like_count"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:orientation="vertical"
+			android:layout_weight="3"
+			android:gravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:text="هل تري هذه الرساله تهم الأخرين ؟"
+				android:textColor="#FF000000"
+				android:visibility="gone"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="user_id"
+				android:textColor="#FF000000"
+				android:id="@+id/user_id"
+				android:visibility="gone"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="horizontal"
+		android:visibility="gone">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Small Text"
+			android:textColor="#FF000000"
+			android:id="@+id/Link1"
+			android:visibility="gone"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Small Text"
+			android:textColor="#FF000000"
+			android:id="@+id/Link2"
+			android:visibility="gone"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Small Text"
+			android:textColor="#FF000000"
+			android:id="@+id/Link3"
+			android:visibility="gone"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Small Text"
+			android:textColor="#FF000000"
+			android:id="@+id/ID"
+			android:visibility="gone"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Small Text"
+			android:textColor="#FF000000"
+			android:id="@+id/UserID"
+			android:visibility="gone"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="17dp"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="اسم المقطع"
+			android:textColor="#FF000000"
+			android:id="@+id/sound_name"
+			android:textSize="12sp"
+			android:singleLine="true"
+			android:visibility="gone"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
