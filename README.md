@@ -1,5 +1,8 @@
 # Social-Media-App
 
+![1674323979311](https://github.com/Osama-Gamal/Social-Media-App/assets/97878002/b170c66f-47f4-45e7-be0f-316d52445937)
+
+
 This is a social media app that I made to communicate with my friends , I used firebase to save all data online , so if you want to download this preoject 
 and try it you must add (google-services.json) file in app directory and you must enable real time database,Storage,Authentication ,
 and then it will work , in this project you will find this features :-
